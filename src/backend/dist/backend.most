@@ -1,0 +1,23 @@
+// Version: 1.0.0
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type SubmissionId__741433157 = Nat;
+type Submission__202511611 =
+  {
+    confidence : Nat;
+    id : SubmissionId__741433157;
+    inputText : Text;
+    justification : Text;
+    timestamp : Timestamp__301639476;
+    verdict : Verdict__578692373
+  };
+type Timestamp__301639476 = Int;
+type Verdict__578692373 = Text;
+actor {
+  stable submissions :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Submission__202511611]];
+      var elementIndex : Nat__490723111
+    }
+};

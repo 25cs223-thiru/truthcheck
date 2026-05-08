@@ -1,0 +1,40 @@
+type http_request_result = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type http_header = 
+ record {
+   name: text;
+   value: text;
+ };
+type Verdict = text;
+type TransformationOutput = 
+ record {
+   body: blob;
+   headers: vec http_header;
+   status: nat;
+ };
+type TransformationInput = 
+ record {
+   context: blob;
+   response: http_request_result;
+ };
+type Timestamp = int;
+type SubmissionId = nat;
+type Submission = 
+ record {
+   confidence: nat;
+   id: SubmissionId;
+   inputText: text;
+   justification: text;
+   timestamp: Timestamp;
+   verdict: Verdict;
+ };
+service : {
+  analyzeText: (inputText: text) -> (Submission);
+  clearHistory: () -> ();
+  getSubmissions: () -> (vec Submission) query;
+  transform: (input: TransformationInput) -> (TransformationOutput) query;
+}

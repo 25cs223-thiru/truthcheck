@@ -1,0 +1,24 @@
+{
+  "overview": "TruthCheck is an AI-powered fake news detection system that analyzes headlines and articles, returning color-coded verdicts (FAKE, REAL, UNCERTAIN) with confidence scores, explanations, and a rich educational Learn section covering media literacy, misinformation tactics, and fact-checking resources.",
+  "features": [
+    "AI-powered verdict analysis (FAKE/REAL/UNCERTAIN)",
+    "Confidence score with color-coded results",
+    "Persistent analysis history across sessions",
+    "Learn page with media literacy educational content",
+    "Misinformation tactics guide",
+    "Fact-checking resource links",
+    "Media literacy definitions",
+    "Expand/collapse content cards",
+    "Tab navigation between Detect and Learn"
+  ],
+  "category": "productivity",
+  "tags": [
+    "fake-news",
+    "media-literacy",
+    "ai",
+    "fact-checking",
+    "education",
+    "misinformation"
+  ],
+  "last_updated": "2026-05-04T16:12:24.723Z"
+}
